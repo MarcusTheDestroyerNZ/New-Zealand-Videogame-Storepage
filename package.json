@@ -31,6 +31,7 @@
 		"@tailwindcss/vite": "^4.2.2",
 		"@types/node": "^22",
 		"better-auth": "~1.4.21",
+		"daisyui": "^5.5.19",
 		"drizzle-kit": "^0.31.10",
 		"drizzle-orm": "^0.45.2",
 		"eslint": "^10.2.0",
