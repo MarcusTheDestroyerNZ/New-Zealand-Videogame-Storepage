@@ -1,4 +1,4 @@
-<div class="navbar bg-neutral shadow-sm">
+<div class="navbar bg-base-200 shadow-sm">
 	<div class="flex-1">
 		<a href="/" class="btn btn-ghost text-xl">Nzidia</a>
 	</div>
