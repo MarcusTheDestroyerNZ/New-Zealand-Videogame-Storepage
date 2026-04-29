@@ -12,7 +12,7 @@
 	<div class="flex">
 		<div class="drawer lg:drawer-open">
 			<input id="my-drawer-4" type="checkbox" class="drawer-toggle" />
-			<div class="drawer-content">
+			<div class="drawer-content p-10">
 				{@render children()}
 			</div>
 			<div class="drawer-side is-drawer-close:overflow-visible">
