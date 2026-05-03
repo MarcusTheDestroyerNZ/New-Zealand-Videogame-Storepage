@@ -1,6 +1,8 @@
 <div class="navbar bg-base-200 shadow-sm">
 	<div class="flex-1">
 		<a href="/" class="btn btn-ghost text-xl">Nzidia</a>
+		<a href="/store" class="btn btn-ghost p-5">Store</a>
+		<a href="/library" class="btn btn-ghost p-5">Library</a>
 	</div>
 	<div class="flex-none gap-2">
 		<div class="dropdown dropdown-end">
