@@ -17,7 +17,7 @@
 					<span class="text-lg font-bold">0 Items</span>
 					<span class="text-info">Subtotal: $0.00</span>
 					<div class="card-actions">
-						<button type="button" class="btn btn-primary btn-block">View cart</button>
+						<a href="/cart" class="btn btn-primary btn-block">View cart</a>
 					</div>
 				</div>
 			</div>
@@ -31,7 +31,7 @@
 				</div>
 			</button>
 			<ul class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-				<li><button type="button">Settings</button></li>
+				<li><a href="/settings">Settings</a></li>
 				<li><button type="button">Logout</button></li>
 			</ul>
 		</div>
