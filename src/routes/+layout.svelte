@@ -12,9 +12,9 @@
 
 <Navbar />
 <div class="p-10">
-	{#key page.url.pathname}
+	<!-- {#key page.url.pathname}
 		<Breadcrumbs />
-	{/key}
+	{/key} -->
 	{@render children()}
 </div>
 
