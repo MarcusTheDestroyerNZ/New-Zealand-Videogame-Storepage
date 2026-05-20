@@ -6,13 +6,13 @@
   <figure>
     <img
       src={image_url}
-      alt="Shoes" />
+      alt="Cant LoadImage" />
   </figure>
   <div class="card-body">
     <h2 class="card-title">{title}</h2>
     <p>{description}</p>
     <div class="card-actions justify-end">
-        <button class="btn btn-secondary">Add to Cart</button>
+      <button class="btn btn-secondary">Add to Cart</button>
       <button class="btn btn-primary">Buy Now</button>
     </div>
   </div>

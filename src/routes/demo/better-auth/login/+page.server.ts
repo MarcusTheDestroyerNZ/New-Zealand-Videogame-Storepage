@@ -6,7 +6,7 @@ import { APIError } from 'better-auth/api';
 
 export const load: PageServerLoad = (event) => {
 	if (event.locals.user) {
-		return redirect(302, '/');
+		return redirect(302, '/demo/better-auth');
 	}
 	return {};
 };
@@ -16,14 +16,13 @@ export const actions: Actions = {
 		const formData = await event.request.formData();
 		const email = formData.get('email')?.toString() ?? '';
 		const password = formData.get('password')?.toString() ?? '';
-		console.log('Attempting to sign in with email:', email);
 
 		try {
 			await auth.api.signInEmail({
 				body: {
 					email,
 					password,
-					callbackURL: '/library'
+					callbackURL: '/auth/verification-success'
 				}
 			});
 		} catch (error) {
@@ -33,7 +32,7 @@ export const actions: Actions = {
 			return fail(500, { message: 'Unexpected error' });
 		}
 
-		return redirect(302, '/');
+		return redirect(302, '/demo/better-auth');
 	},
 	signUpEmail: async (event) => {
 		const formData = await event.request.formData();
@@ -47,17 +46,16 @@ export const actions: Actions = {
 					email,
 					password,
 					name,
-					callbackURL: '/library'
+					callbackURL: '/auth/verification-success'
 				}
 			});
 		} catch (error) {
 			if (error instanceof APIError) {
 				return fail(400, { message: error.message || 'Registration failed' });
 			}
-			console.error('Error during registration:', error);
 			return fail(500, { message: 'Unexpected error' });
 		}
 
-		return redirect(302, '/login');
+		return redirect(302, '/demo/better-auth');
 	},
 };
