@@ -1,10 +1,11 @@
-import { sqliteTable, text, integer } from 'drizzle-orm/sqlite-core';
+import { sqliteTable, text, integer, numeric } from 'drizzle-orm/sqlite-core';
 import { user } from './auth.schema';
 
 export const game = sqliteTable('games', {
 	id: text('id').primaryKey().$defaultFn(() => crypto.randomUUID()),
 	title: text('title').notNull(),
 	description: text('description').notNull().default(''),
+	price: text('price').notNull().default('0.00'),
 	url: text('url').notNull().default('')
 });
 

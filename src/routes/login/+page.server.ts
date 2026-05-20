@@ -16,7 +16,6 @@ export const actions: Actions = {
 		const formData = await event.request.formData();
 		const email = formData.get('email')?.toString() ?? '';
 		const password = formData.get('password')?.toString() ?? '';
-		console.log('Attempting to sign in with email:', email);
 
 		try {
 			await auth.api.signInEmail({

@@ -2,4 +2,4 @@
     import Breadcrumbs from "$lib/components/breadcrumbs.svelte";
 </script>
 
-<h1 class="text-2xl font-bold">Checkout Page</h1>
+<h1 class="text-2xl font-bold">Cart</h1>
