@@ -32,8 +32,9 @@
 				</div>
 			</button>
 			<ul class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+				<li><a href="/profile">Profile</a></li>
 				<li><a href="/settings">Settings</a></li>
-				<li><button type="button" form="?/signOut">Logout</button></li>
+				<li><a href="/logout">Logout</a></li>
 			</ul>
 		</div>
 	</div>
