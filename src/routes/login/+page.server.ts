@@ -32,7 +32,7 @@ export const actions: Actions = {
 			return fail(500, { message: 'Unexpected error' });
 		}
 
-		return redirect(302, '/');
+		return redirect(302, '/profile');
 	},
 	signUpEmail: async (event) => {
 		const formData = await event.request.formData();

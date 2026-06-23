@@ -2,7 +2,7 @@
   const { image_url, title, description, price } = $props();
 </script>
 
-<div class="card bg-base-200 w-96 shadow-sm">
+<div class="card bg-base-200 w-96 shadow-sm rounded-3xl">
   <figure>
     <img
       src={image_url}
@@ -14,8 +14,8 @@
     <p>{description}</p>
     <div class="card-actions justify-end">
       <h1 class="m-1 mx-auto text-xl font-bold">${parseFloat(price).toFixed(2)}</h1>
-      <li><a href="/cart" class="btn btn-secondary">Add to Cart</a></li>
-      <li><a href="/checkout" class="btn btn-primary">Buy Now</a></li>
+      <li><a href="/cart" class="btn btn-secondary rounded-3xl">Add to Cart</a></li>
+      <li><a href="/checkout" class="btn btn-primary rounded-3xl">Buy Now</a></li>
     </div>
   </div>
 </div>

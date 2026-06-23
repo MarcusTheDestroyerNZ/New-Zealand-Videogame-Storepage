@@ -1,41 +1,41 @@
 <div class="navbar bg-base-200 shadow-sm">
 	<div class="flex-1">
-		<a href="/" class="btn btn-ghost text-xl">Nzidia</a>
-		<a href="/store" class="btn btn-ghost p-5">Store</a>
-		<a href="/library" class="btn btn-ghost p-5">Library</a>
-		<a href="/login" class="btn btn-ghost p-5">Login</a>
+		<a href="/" class="btn btn-ghost text-xl rounded-3xl">Nzidia</a>
+		<a href="/store" class="btn btn-ghost p-5 rounded-3xl">Store</a>
+		<a href="/library" class="btn btn-ghost p-5 rounded-3xl">Library</a>
+		<a href="/login" class="btn btn-ghost p-5 rounded-3xl">Login</a>
 	</div>
 	<div class="flex-none gap-2">
 		<div class="dropdown dropdown-end">
-			<button type="button" class="btn btn-ghost btn-circle" aria-label="Open cart menu">
+			<button type="button" class="btn btn-ghost btn-circle" aria-label="Open cart">
 				<div class="indicator">
 					<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
 					<span class="badge badge-sm indicator-item">0</span>
 				</div>
 			</button>
-			<div tabindex="-1" class="card card-compact dropdown-content bg-base-100 z-1 mt-3 w-52 shadow">
+			<div tabindex="-1" class="card card-compact dropdown-content bg-base-200 z-1 mt-3 w-52 shadow rounded-b-3xl rounded-t-none">
 				<div class="card-body">
 					<span class="text-lg font-bold">0 Items</span>
 					<span class="text-info">Subtotal: $0.00</span>
 					<div class="card-actions">
-						<a href="/cart" class="btn btn-primary btn-block">View cart</a>
+						<a href="/cart" class="btn btn-primary btn-block rounded-3xl">View cart</a>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="dropdown dropdown-end">
-			<button type="button" class="btn btn-ghost btn-circle avatar" aria-label="Open profile menu">
-				<div class="w-10 rounded-full">
-					<img
-						alt="Tailwind CSS Navbar component"
-						src="https://t3.ftcdn.net/jpg/06/33/54/78/360_F_633547842_AugYzexTpMJ9z1YcpTKUBoqBF0CUCk10.jpg" />
-				</div>
-			</button>
-			<ul class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-				<li><a href="/profile">Profile</a></li>
-				<li><a href="/settings">Settings</a></li>
-				<li><a href="/logout">Logout</a></li>
-			</ul>
-		</div>
+		<a href="/wishlist" class="btn btn-ghost btn-circle" aria-label="Wishlist">
+			<div class="indicator">
+				<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" /></svg>
+				<span class="badge badge-sm indicator-item">0</span>
+			</div>
+		</a>
+		<a href="/account" class="btn btn-ghost btn-circle avatar" aria-label="Account">
+			<div class="w-10 rounded-full flex items-center justify-center">
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+					<path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+					<path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+				</svg>
+			</div>
+		</a>
 	</div>
 </div>
