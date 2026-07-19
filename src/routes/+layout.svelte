@@ -1,20 +1,17 @@
 <script lang="ts">
 	import './layout.css';
-	import { page } from '$app/state';
+	import type { LayoutData } from './$types';
+	import type { Snippet } from 'svelte';
 	import favicon from '$lib/assets/favicon.svg';
 	import Navbar from "$lib/components/navbar.svelte";
-	import Breadcrumbs from "$lib/components/breadcrumbs.svelte";
 
-	let { children } = $props();
+	let { children, data }: { children: Snippet; data: LayoutData } = $props();
 </script>
 
 <svelte:head><link rel="icon" href={favicon} /></svelte:head>
 
-<Navbar />
+<Navbar data={data} />
 <div class="p-10">
-	<!-- {#key page.url.pathname}
-		<Breadcrumbs />
-	{/key} -->
 	{@render children()}
 </div>
 

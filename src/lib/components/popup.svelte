@@ -4,16 +4,20 @@
 
     const dispatch = createEventDispatcher();
 
-    export let open = false;
-    export let title = '';
+    let { open = false, title = '', children } = $props();
 </script>
 
 {#if open}
     <div class="fixed inset-0 z-50 flex items-center justify-center" transition:fade>
-        <div class="absolute inset-0 bg-black opacity-50" on:click={() => dispatch('close')}></div>
-        <div class="relative bg-white rounded-lg shadow-lg p-6 w-full max-w-md">
+        <button
+            type="button"
+            class="absolute inset-0 bg-black opacity-50"
+            aria-label="Close popup"
+            onclick={() => dispatch('close')}
+        ></button>
+        <div class="relative bg-base-100 rounded-lg shadow-lg p-6 w-full max-w-md">
             <h2 class="text-xl font-bold mb-4">{title}</h2>
-            <slot></slot>
+            {@render children?.()}
         </div>
     </div>
 {/if}

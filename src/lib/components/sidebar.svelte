@@ -29,6 +29,14 @@
             <span class="is-drawer-close:hidden">Settings</span>
           </button>
         </li>
+
+        <!-- Support page entry -->
+        <li>
+          <button class="is-drawer-close:tooltip is-drawer-close:tooltip-right" data-tip="Support">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linejoin="round" stroke-linecap="round" stroke-width="2" fill="none" stroke="currentColor" class="my-1.5 inline-block size-4"><path d="M12 18h.01"></path><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><circle cx="12" cy="12" r="9"></circle></svg>
+            <span class="is-drawer-close:hidden">Support</span>
+          </button>
+        </li>
       </ul>
     </div>
   </div>
