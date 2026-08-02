@@ -97,7 +97,6 @@
           <p class="text-sm uppercase tracking-[0.2em] opacity-60">Selected game</p>
           <h2 class="text-3xl font-bold">{selectedGame.title}</h2>
           <p class="opacity-70">{selectedGame.description}</p>
-          <p class="text-2xl font-bold">${Number.parseFloat(selectedGame.price).toFixed(2)}</p>
           <div class="flex flex-wrap gap-3">
             <button type="button" class="btn btn-primary rounded-3xl" onclick={() => (playPopupOpen = true)}>Play</button>
           </div>
